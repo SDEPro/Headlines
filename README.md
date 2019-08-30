@@ -15,7 +15,7 @@ credits section
 - GET /headlines/<DATE_STRING> will return all headlines whose publication date matches <DATE_STRING> and employees who match on location of interest.
 
 ## Installation and Configuration
-Set your environment variables as defined below. Create a ```.env``` file in the main Headlines directory. Add environment variables as described below.
+Set your environment variables as defined below. Create a ```.env``` file in the main Headlines directory. Add environment variables as described below. The main directory is called ```Headlines``` and is off of the top directory in the repo.
 
 From within the main Headlines directory simply run
 ```javascript
