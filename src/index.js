@@ -106,23 +106,23 @@ var itemsArr =[];
 		});
 	});}(itemsArr));
 
+
+//Stanzas for operations not yet implemented                                                                                    
 app.put('/headlines/:myParam', (req, res) => {
-	return res.send(`Received a ${req.protocol} request on ${req.path} ${req.params.myParam}`);
+        return res.status(405).end();
     });
 
 app.post('/headlines/:myParam', (req, res) => {
-	return res.send(`Received a ${req.protocol} request on ${req.path} ${req.params.myParam}`);
+	return res.status(405).end();
     });
 
 app.patch('/headlines/:myParam', (req, res) => {
-	return res.send(`Received a ${req.protocol} request on ${req.path} ${req.params.myParam}`);
+        return res.status(405).end();
     });
 
 app.delete('/headlines/:myParam', (req, res) => {
-	return res.send(`Received a ${req.protocol} request on ${req.path} ${req.params.myParam}`);
+        return res.status(405).end();
     });
-
-
 
 app.listen(process.env.PORT, () =>
 	   console.log(`Example app listening on port ${process.env.PORT}!`),
