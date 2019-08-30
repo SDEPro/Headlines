@@ -48,3 +48,46 @@ describe('Get with bad parameter', function() {
 			});
 	    });
     });
+
+//Non-implemented Actions                                                                                                         
+describe('Put call', function() {
+        it('should return status 405', function() {
+                request(
+                        { method: 'PUT', uri: 'http://localhost:3000/headlines/2016-02-05'},
+                        function (error, response, body) {
+                            assert.equal(response.statusCode, 405);
+                        });
+            });
+    });
+
+describe('Post call', function() {
+        it('should return status 405', function() {
+                request(
+                        { method: 'POST', uri: 'http://localhost:3000/headlines/2016-02-05'},
+                        function (error, response, body) {
+                            assert.equal(response.statusCode, 405);
+                        });
+            });
+    });
+
+describe('Patch call', function() {
+        it('should return status 405', function() {
+                request(
+                        { method: 'PATCH', uri: 'http://localhost:3000/headlines/2016-02-05'},
+                        function (error, response, body) {
+                            assert.equal(response.statusCode, 405);
+                        });
+            });
+    });
+
+describe('Delete call', function() {
+        it('should return status 405', function() {
+                request(
+                        { method: 'DELETE', uri: 'http://localhost:3000/headlines/2016-02-05'},
+                        function (error, response, body) {
+                            assert.equal(response.statusCode, 405);
+                        });
+            });
+    });
+
+
